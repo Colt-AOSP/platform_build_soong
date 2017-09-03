@@ -176,6 +176,12 @@ type productVariables struct {
 
 	// include Colt variables
 	Colt android_colt.ProductVariables
+
+	// Pathmap variables
+	QTIAudioPath *string `json:",omitempty"`
+	QTIDisplayPath *string `json:",omitempty"`
+	QTIMediaPath *string `json:",omitempty"`
+
 }
 
 func boolPtr(v bool) *bool {

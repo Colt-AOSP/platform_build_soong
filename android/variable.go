@@ -99,6 +99,7 @@ type variableProperties struct {
 
 		// include COLT variables
 		Colt android_colt.Product_variables
+		Qualcomm android_colt.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -181,6 +182,7 @@ type productVariables struct {
 
 	// include Colt variables
 	Colt android_colt.ProductVariables
+	Qualcomm android_colt.ProductVariables
 }
 
 func boolPtr(v bool) *bool {

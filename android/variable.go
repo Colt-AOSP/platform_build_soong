@@ -99,6 +99,7 @@ type variableProperties struct {
 
 		// include Colt variables
 		Colt android_colt.Product_variables
+		Qualcomm android_colt.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -176,12 +177,12 @@ type productVariables struct {
 
 	// include Colt variables
 	Colt android_colt.ProductVariables
+	Qualcomm android_colt.ProductVariables
 
 	// Pathmap variables
 	QTIAudioPath *string `json:",omitempty"`
 	QTIDisplayPath *string `json:",omitempty"`
 	QTIMediaPath *string `json:",omitempty"`
-
 }
 
 func boolPtr(v bool) *bool {
